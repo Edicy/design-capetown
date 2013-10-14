@@ -22,6 +22,17 @@
       {% include "Menu" %}
       
       <div id="content" class="clearfix">
+         {% if tags %}
+            <div class="tagged-list-header">
+                <div class="header-tag-icon"></div>
+                {% if tags == empty %}
+                    {{ "no_posts_tagged" | lc }}
+                {% else %}
+                    {{ "posts_tagged" | lc }} '{{ tags | sort:"name" | map:"name" | join:"', '"}}'.
+                {% endif %}
+            </div>
+        {% endif %}
+      
         {% addbutton class="add-article" %}
         
         {% for article in articles %}

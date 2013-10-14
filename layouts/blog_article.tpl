@@ -29,6 +29,22 @@
             {% editable article.excerpt %}
           </div>
           {% editable article.body %}
+          
+          {% if editmode %}
+            <div class="cfx article-tags">
+                <div class="article-tag-icon"></div>
+                {% editable article.tags %}
+            </div>
+          {% else %}
+            {% unless article.tags == empty %}
+                <div class="cfx article-tags">
+                    <div class="article-tag-icon"></div>
+                    {% for tag in article.tags %}
+                        <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </div>
+            {% endunless %}
+          {% endif %}
 
           
           <div id="comments">
@@ -44,7 +60,7 @@
                     <span>{{ comment.created_at | format_date : "%B %d, %Y" }}</span>
                   </div> <!-- //comment-left -->
                   <div class="comment-right">
-                    {{ comment.body }}
+                    {{ comment.body_html }}
                   </div> <!-- //comment-right -->
               </div> <!-- //comment -->
               {%endfor%}
