@@ -523,7 +523,7 @@ body .add-article {
   display: inline-block !important;
   text-decoration: none
 }
-input, button { -webkit-appearance: none; }
+input[type="text"], button { -webkit-appearance: none; }
 html { -webkit-text-size-adjust: none; }
 
 
