@@ -1,176 +1,188 @@
 {
+  "description": "Boys are back in town",
+  "name": "Cape Town",
   "preview_medium": "http://static.edicy.com/designs/previews/capetown_medium.jpg",
+  "preview_small": "http://static.edicy.com/designs/previews/capetown_small.jpg",
+  "author": "Tajo Oja",
   "layouts": [
     {
+      "content_type": "blog",
+      "component": false,
       "file": "layouts/blog___news.tpl",
-      "component": false,
       "layout_name": "blog_front",
-      "title": "Blog & News",
-      "content_type": "blog"
+      "title": "Blog & News"
     },
     {
+      "content_type": "blog_article",
+      "component": false,
       "file": "layouts/blog_article.tpl",
-      "component": false,
       "layout_name": "blog_article",
-      "title": "Blog article",
-      "content_type": "blog_article"
+      "title": "Blog article"
     },
     {
+      "content_type": "page",
+      "component": false,
       "file": "layouts/common_page.tpl",
-      "component": false,
       "layout_name": "page_default",
-      "title": "Common page",
-      "content_type": "page"
+      "title": "Common page"
     },
     {
-      "file": "components/js.tpl",
-      "component": true,
-      "layout_name": "",
-      "title": "JS",
-      "content_type": "component"
-    },
-    {
-      "file": "components/langmenu.tpl",
-      "component": true,
-      "layout_name": "",
-      "title": "Langmenu",
-      "content_type": "component"
-    },
-    {
-      "file": "components/menu.tpl",
-      "component": true,
-      "layout_name": "",
-      "title": "Menu",
-      "content_type": "component"
-    },
-    {
-      "file": "components/search.tpl",
-      "component": true,
-      "layout_name": "",
-      "title": "Search",
-      "content_type": "component"
-    },
-    {
-      "file": "components/siteheader.tpl",
-      "component": true,
-      "layout_name": "",
-      "title": "SiteHeader",
-      "content_type": "component"
-    },
-    {
-      "file": "layouts/front_page.tpl",
+      "content_type": "page",
       "component": false,
+      "file": "layouts/front_page.tpl",
       "layout_name": "page_front",
-      "title": "Front page",
-      "content_type": "page"
+      "title": "Front page"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/js.tpl",
+      "layout_name": "js",
+      "title": "js"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/langmenu.tpl",
+      "layout_name": "langmenu",
+      "title": "langmenu"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/langmenu.tpl",
+      "layout_name": "langmenu",
+      "title": "langmenu"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/siteheader.tpl",
+      "layout_name": "siteheader",
+      "title": "siteheader"
     }
   ],
-  "description": "Boys are back in town",
-  "preview_small": "http://static.edicy.com/designs/previews/capetown_small.jpg",
   "assets": [
     {
-      "file": "stylesheets/style_ie.css",
-      "kind": "stylesheets",
-      "filename": "style_ie.css",
-      "content_type": "text/css"
+      "content_type": "image/svg+xml",
+      "file": "assets/header-tag.svg",
+      "kind": "assets",
+      "filename": "header-tag.svg"
     },
     {
-      "file": "stylesheets/style.css",
-      "kind": "stylesheets",
-      "filename": "style.css",
-      "content_type": "text/css"
-    },
-    {
-      "file": "images/mainmenu.gif",
+      "content_type": "text/unknown",
+      "file": "images/.DS_Store",
       "kind": "images",
-      "filename": "mainmenu.gif",
-      "content_type": "image/gif"
+      "filename": ".DS_Store"
     },
     {
-      "file": "images/spot.gif",
-      "kind": "images",
-      "filename": "spot.gif",
-      "content_type": "image/gif"
-    },
-    {
-      "file": "images/edicy.gif",
-      "kind": "images",
-      "filename": "edicy.gif",
-      "content_type": "image/gif"
-    },
-    {
+      "content_type": "image/gif",
       "file": "images/bg.gif",
       "kind": "images",
-      "filename": "bg.gif",
-      "content_type": "image/gif"
+      "filename": "bg.gif"
     },
     {
+      "content_type": "image/gif",
       "file": "images/btn.gif",
       "kind": "images",
-      "filename": "btn.gif",
-      "content_type": "image/gif"
+      "filename": "btn.gif"
     },
     {
-      "file": "images/header.gif",
+      "content_type": "image/gif",
+      "file": "images/edicy.gif",
       "kind": "images",
-      "filename": "header.gif",
-      "content_type": "image/gif"
+      "filename": "edicy.gif"
     },
     {
-      "file": "images/textbox.gif",
-      "kind": "images",
-      "filename": "textbox.gif",
-      "content_type": "image/gif"
-    },
-    {
-      "file": "images/mainmenu_active.gif",
-      "kind": "images",
-      "filename": "mainmenu_active.gif",
-      "content_type": "image/gif"
-    },
-    {
-      "file": "images/mainmenu-active1.gif",
-      "kind": "images",
-      "filename": "mainmenu-active1.gif",
-      "content_type": "image/gif"
-    },
-    {
-      "file": "images/wrap.gif",
-      "kind": "images",
-      "filename": "wrap.gif",
-      "content_type": "image/gif"
-    },
-    {
+      "content_type": "image/png",
       "file": "images/header-tag.png",
       "kind": "images",
-      "filename": "header-tag.png",
-      "content_type": "image/png"
+      "filename": "header-tag.png"
     },
     {
-      "file": "images/header-tag.svg",
+      "content_type": "image/gif",
+      "file": "images/header.gif",
       "kind": "images",
-      "filename": "header-tag.svg",
-      "content_type": "image/svg+xml"
+      "filename": "header.gif"
     },
     {
+      "content_type": "image/gif",
+      "file": "images/mainmenu-active1.gif",
+      "kind": "images",
+      "filename": "mainmenu-active1.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/mainmenu.gif",
+      "kind": "images",
+      "filename": "mainmenu.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/mainmenu_active.gif",
+      "kind": "images",
+      "filename": "mainmenu_active.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/spot.gif",
+      "kind": "images",
+      "filename": "spot.gif"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/header-tag.png",
+      "kind": "images",
+      "filename": "header-tag.png"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/header-tag.svg",
+      "kind": "assets",
+      "filename": "header-tag.svg"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/textbox.gif",
+      "kind": "images",
+      "filename": "textbox.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/wrap.gif",
+      "kind": "images",
+      "filename": "wrap.gif"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr.js",
       "kind": "javascripts",
-      "filename": "modernizr.js",
-      "content_type": "text/javascript"
+      "filename": "modernizr.js"
     },
     {
-      "file": "images/tag.png",
-      "kind": "images",
-      "filename": "tag.png",
-      "content_type": "image/png"
+      "content_type": "text/css",
+      "file": "stylesheets/search-develop.css",
+      "kind": "stylesheets",
+      "filename": "search-develop.css"
     },
     {
-      "file": "images/tag.svg",
-      "kind": "images",
-      "filename": "tag.svg",
-      "content_type": "image/svg+xml"
+      "content_type": "text/css",
+      "file": "stylesheets/style.css",
+      "kind": "stylesheets",
+      "filename": "style.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/style_ie.css",
+      "kind": "stylesheets",
+      "filename": "style_ie.css"
     }
-  ],
-  "name": "Cape Town",
-  "author": "Tajo Oja"
+  ]
 }
