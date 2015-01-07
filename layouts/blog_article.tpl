@@ -6,21 +6,21 @@
 </head>
 <body>
 
-<div id="wrap">
+<div id="wrap"{% if editmode %} class="editmode"{% endif %}>
     <div id="container">
-      
+
       <div id="topbar">
-        
+
         {% include "Search" %}
-        
+
         {% include "Langmenu"%}
-        
+
       </div> <!-- //topbar -->
-      
+
       <div id="header" class="clearfix">{% editable site.header %}</div>
-      
+
       {% include "Menu" %}
-      
+
       <div id="content" class="clearfix">
         <div class="news-block news-block-last">
           <h1>{% editable article.title %}</h1>
@@ -29,7 +29,7 @@
             {% editable article.excerpt %}
           </div>
           {% editable article.body %}
-          
+
           {% if editmode %}
             <div class="cfx article-tags">
                 <div class="article-tag-icon"></div>
@@ -46,13 +46,13 @@
             {% endunless %}
           {% endif %}
 
-          
+
           <div id="comments">
 
             {% if article.comments_count > 0 %}
               <h3>{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>
 </h3>
-            
+
               {% for comment in article.comments %}
                 <div class="comment clearfix edy-site-blog-comment">
                   <div class="comment-left">
@@ -65,10 +65,10 @@
               </div> <!-- //comment -->
               {%endfor%}
             {% endif %}
-    
-            
+
+
             <div id="comment-form">
-              
+
               {% commentform %}
                 <h3>{{"add_a_comment"|lc}}</h3>
                 <table>
@@ -84,7 +84,7 @@
                     </td>
                   </tr>
                   {% endunless %}
-                
+
                   <tr>
                     <td class="first">{{"name"|lc}}</td>
                     <td><input type="text" name="comment[author]" class="textbox" value="{{comment.author}}" /></td>
@@ -104,18 +104,18 @@
                 </table>
               {% endcommentform %}
             </div> <!-- //comment-form -->
-            
+
           </div> <!-- //comments -->
         </div> <!-- //news-block -->
       </div> <!-- //content -->
-      
+
       <div id="footer" class="clearfix">
         <div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div>
         <div id="footer-inner" class="clearfix">
           {% xcontent name="footer" %}
         </div> <!-- //footer-inner -->
       </div> <!-- //footer -->
-      
+
     </div> <!-- //container -->
   </div> <!-- //wrap -->
 {% unless editmode %}{{ site.analytics }}{% endunless %}

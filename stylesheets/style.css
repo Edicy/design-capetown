@@ -35,7 +35,7 @@ img {
   border: none;
   max-width: 100%;
   height: auto;
-  width: auto\9; /* ie8 */   
+  width: auto\9; /* ie8 */
 }
 form {
   margin: 0;
@@ -89,20 +89,20 @@ ul li, ol li {
     padding:0 0 30px;
     background: url('../images/wrap.gif?1') no-repeat;
   }
-  
+
 /* container */
   #container {
     margin: 0 auto;
     max-width: 806px;
     text-align: left;
   }
-  
+
   /* topbar */
   #topbar {
     height: 68px;
     position: relative;
   }
-  
+
     /* langmenu */
       #langmenu {
         margin: 0;
@@ -112,7 +112,7 @@ ul li, ol li {
         bottom: 13px;
         left: 0;
         width: 62%;
-        
+
       }
       #langmenu li {
         display: inline;
@@ -120,7 +120,7 @@ ul li, ol li {
         line-height: 15px;
         padding: 0 5px;
       }
-    
+
       #langmenu a {
         color: #66aef9;
         text-decoration: none;
@@ -132,7 +132,7 @@ ul li, ol li {
       #langmenu a.active {
         color: white;
       }
-    
+
     /* search */
       #search-container {
         float: right;
@@ -162,8 +162,12 @@ ul li, ol li {
           border-radius: 4px;
           margin-left: 5px;
         }
-    
-  
+
+        .voog-search-mobile-mode {
+          top: 34px !important;
+        }
+
+
   /* header */
     #header {
       min-height: 60px;
@@ -187,7 +191,7 @@ ul li, ol li {
         font-weight: bold;
         text-decoration: none;
       }
-    
+
   /* mainmenu */
     #mainmenu {
       margin: 0;
@@ -211,33 +215,33 @@ ul li, ol li {
         border: 1px solid transparent;
         font-size: 13px; color: white; text-decoration: none;
       }
-      
+
       #mainmenu a:hover {
         border: 1px solid #3684d3;
-        -webkit-border-radius: 3px; 
-           -moz-border-radius: 3px; 
-                border-radius: 3px; 
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+                border-radius: 3px;
         background: #5ba8f5;
       }
-      
-      
+
+
       #mainmenu .active a {
         display: block;
         border: 1px solid #327ecc;
-        -webkit-border-radius: 3px; 
-           -moz-border-radius: 3px; 
-                border-radius: 3px; 
-        -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+        -webkit-border-radius: 3px;
+           -moz-border-radius: 3px;
+                border-radius: 3px;
+        -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
         background-color: #3574b4;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#3574b4), to(#4599ee)); 
-        background-image: -webkit-linear-gradient(top, #3574b4, #4599ee); 
-        background-image:    -moz-linear-gradient(top, #3574b4, #4599ee); 
-        background-image:     -ms-linear-gradient(top, #3574b4, #4599ee); 
-        background-image:      -o-linear-gradient(top, #3574b4, #4599ee); 
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#3574b4), to(#4599ee));
+        background-image: -webkit-linear-gradient(top, #3574b4, #4599ee);
+        background-image:    -moz-linear-gradient(top, #3574b4, #4599ee);
+        background-image:     -ms-linear-gradient(top, #3574b4, #4599ee);
+        background-image:      -o-linear-gradient(top, #3574b4, #4599ee);
         background-image:         linear-gradient(top, #3574b4, #4599ee);
-                  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3574b4', EndColorStr='#4599ee'); 
+                  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3574b4', EndColorStr='#4599ee');
       }
-      
+
   /* secondmenu */
     #second-menu, #third-menu {
       background: #e5e5e5;
@@ -278,7 +282,7 @@ ul li, ol li {
         color: #4398ef;
         font-weight: bold;
       }
-      
+
   /* content */
     #content {
       background: white;
@@ -286,12 +290,12 @@ ul li, ol li {
       border-right: 1px solid #e6e6e6;
       padding: 10px 25px;
     }
-    
+
   /* footer */
     #footer {
       border: 1px solid #c6c6c6;
       background: #eeeeee;
-      
+
     }
       #footer-inner {
         width: 65%;
@@ -299,7 +303,7 @@ ul li, ol li {
         min-height: 20px;
         font-size: 11px
       }
-      
+
       * html #footer-inner {
         height: 20px;
       }
@@ -344,7 +348,7 @@ ul li, ol li {
   }
     .news-block h1 { padding-bottom: 0; }
     .news-date { font-size: 12px; color: #808080; padding-bottom: 10px;}
-    
+
 /* article tags */
 .article-tags { margin-top: 20px; font-size: 14px; min-height: 1em; }
 .edy-tag-input { outline: none; }
@@ -380,12 +384,12 @@ ul li, ol li {
 .tagged-list-header  a {border: none; text-decoration: none;}
 .tagged-list-header  a:hover { border-bottom: 1px solid #BEBEBE; }
 .article-tags .edy-taglist { margin-left: 25px; }
-    
+
 /* comments */
   #comments {
     padding: 20px 0 0 0;
   }
-  
+
   #comments .comment {
     border-top: 1px solid #d1d1d1;
     padding: 10px 0 15px;
@@ -404,16 +408,16 @@ ul li, ol li {
   #comments .comment-right {
     margin-left: 155px;
   }
-  
+
   #comment-form {
-    
+
   }
     #comment-form form {
       padding: 0;
       margin: 0;
-      
+
     }
-    
+
     #comment-form table {
       border-collapse: collapse;
       width: 100%;
@@ -428,7 +432,7 @@ ul li, ol li {
         padding-right: 15px;
         text-align: right;
       }
-      
+
       #comment-form .textbox {
         border: 1px solid #3784b3;
         background: white url('../images/textbox.gif?1') repeat-x top left;
@@ -459,7 +463,7 @@ ul li, ol li {
         .comment-error li {
           color: #9b1e24;
         }
-        
+
 
 /* forms */
   .form_area { margin: 20px 0; }
@@ -507,7 +511,7 @@ ul li, ol li {
   .form_field_size_medium { width: 50%; }
   .form_field_size_small { width: 25%; }
 
-  
+
   .form_submit input {
     border: 1px solid #2d83da;
     font: bold 13px/16px Arial, Verdana, sans-serif;
@@ -535,9 +539,9 @@ html { -webkit-text-size-adjust: none; }
 
 
 @media screen and (max-width: 480px) {
-  
+
 h1 {
-  font:23px/25px Arial,Verdana,sans-serif    
+  font:23px/25px Arial,Verdana,sans-serif
 }
 #topbar {height: auto;}
 #header {
