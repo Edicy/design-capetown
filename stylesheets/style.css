@@ -141,7 +141,7 @@ ul li, ol li {
         #search-container .textbox {
           border: none;
           background: white url('../images/textbox.gif?1') repeat-x top left;
-          padding: 4px 5px 0;
+          padding: 2px 5px;
           height: 19px;
           width: 168px;
           font: 14px/16px Arial, Verdana, sans-serif;
