@@ -50,9 +50,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/langmenu.tpl",
-      "layout_name": "langmenu",
-      "title": "langmenu"
+      "file": "components/menu.tpl",
+      "layout_name": "menu",
+      "title": "menu"
     },
     {
       "content_type": "component",
@@ -132,15 +132,15 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/header-tag.png",
+      "file": "images/tag.png",
       "kind": "images",
-      "filename": "header-tag.png"
+      "filename": "tag.png"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/header-tag.svg",
-      "kind": "assets",
-      "filename": "header-tag.svg"
+      "file": "images/tag.svg",
+      "kind": "images",
+      "filename": "tag.svg"
     },
     {
       "content_type": "image/gif",
@@ -159,12 +159,6 @@
       "file": "javascripts/modernizr.js",
       "kind": "javascripts",
       "filename": "modernizr.js"
-    },
-    {
-      "content_type": "text/css",
-      "file": "stylesheets/search-develop.css",
-      "kind": "stylesheets",
-      "filename": "search-develop.css"
     },
     {
       "content_type": "text/css",
