@@ -7,7 +7,7 @@
 <body>
 
 <div id="wrap"{% if editmode %} class="editmode"{% endif %}>
-    <div id="container">
+    <div id="container" class="content-hyphenate">
 
       <div id="topbar">
 
@@ -22,7 +22,7 @@
       {% include "Menu" %}
 
       <div id="content" class="clearfix">
-        <div class="news-block news-block-last content-hyphenate">
+        <div class="news-block news-block-last">
           <h1>{% editable article.title %}</h1>
           <div class="news-date">{{ article.created_at | format_date : "%B %d, %Y" }}</div>
           <div style="padding-bottom: 10px; font-weight: bold;" class="clearfix">
@@ -47,7 +47,7 @@
           {% endif %}
 
 
-          <div id="comments" class="content-hyphenate">
+          <div id="comments">
 
             {% if article.comments_count > 0 %}
               <h3>{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{ article.comments_count }}</span>
@@ -109,7 +109,7 @@
         </div> <!-- //news-block -->
       </div> <!-- //content -->
 
-      <div id="footer" class="clearfix content-hyphenate">
+      <div id="footer" class="clearfix">
         <div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div>
         <div id="footer-inner" class="clearfix">
           {% xcontent name="footer" %}

@@ -623,3 +623,13 @@ h1 {
   padding: 9px 10px
 }
 }
+
+#content .edy-btn-removecomment {
+  position: relative;
+  top: 1px;
+  line-height: 0 !important;
+}
+
+#content .edy-site-blog-comment:hover .edy-btn-removecomment {
+  text-decoration: none;
+}

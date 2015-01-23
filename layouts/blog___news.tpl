@@ -7,9 +7,9 @@
 <body>
 
 <div id="wrap"{% if editmode %} class="editmode"{% endif %}>
-    <div id="container">
+    <div id="container" class="content-hyphenate">
 
-      <div id="topbar" class="content-hyphenate">
+      <div id="topbar">
 
         {% include "Search" %}
 
@@ -17,11 +17,11 @@
 
       </div> <!-- //topbar -->
 
-      <div id="header" class="clearfix content-hyphenate">{% editable site.header %}</div>
+      <div id="header" class="clearfix">{% editable site.header %}</div>
 
       {% include "Menu" %}
 
-      <div id="content" class="clearfix content-hyphenate">
+      <div id="content" class="clearfix">
          {% if tags %}
             <div class="tagged-list-header">
                 <div class="header-tag-icon"></div>
@@ -36,7 +36,7 @@
         {% addbutton class="add-article" %}
 
         {% for article in articles %}
-        <div class="news-block{% if forloop.last %} news-block-last{% endif%} content-hyphenate">
+        <div class="news-block{% if forloop.last %} news-block-last{% endif%}">
           <h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
           <div class="news-date">{{ article.created_at | format_date : "%B %d, %Y" }}</div>
           {{ article.excerpt }} <a href="{{ article.url }}">{{ "read_more"|lc}} &raquo;</a>
@@ -44,7 +44,7 @@
         {% endfor %}
       </div> <!-- //content -->
 
-      <div id="footer" class="clearfix content-hyphenate">
+      <div id="footer" class="clearfix">
         <div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div>
         <div id="footer-inner" class="clearfix">
           {% xcontent name="footer" %}

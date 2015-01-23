@@ -77,6 +77,12 @@
       "filename": "header-tag.svg"
     },
     {
+      "content_type": "text/unknown",
+      "file": "images/.DS_Store",
+      "kind": "images",
+      "filename": ".DS_Store"
+    },
+    {
       "content_type": "image/gif",
       "file": "images/bg.gif",
       "kind": "images",
