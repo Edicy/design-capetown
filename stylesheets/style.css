@@ -82,6 +82,14 @@ ul li, ol li {
   padding: 3px 0 3px 0px;
 }
 
+.content-hyphenate {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 /* Editable content image */
 .edy-positionable-container-left {
   margin-right: 15px;

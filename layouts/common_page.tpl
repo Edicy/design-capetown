@@ -8,7 +8,7 @@
 <div id="wrap"{% if editmode %} class="editmode"{% endif %}>
     <div id="container">
 
-      <div id="topbar">
+      <div id="topbar" class="content-hyphenate">
 
         {% include "Search" %}
 
@@ -16,15 +16,15 @@
 
       </div> <!-- //topbar -->
 
-      <div id="header" class="clearfix">{% editable site.header %}</div>
+      <div id="header" class="clearfix content-hyphenate">{% editable site.header %}</div>
 
       {% include "Menu" %}
 
-      <div id="content" class="clearfix">
+      <div id="content" class="clearfix content-hyphenate">
         {% content %}
       </div> <!-- //content -->
 
-      <div id="footer" class="clearfix">
+      <div id="footer" class="clearfix content-hyphenate">
         <div id="edicy">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div>
         <div id="footer-inner" class="clearfix">
           {% xcontent name="footer" %}
