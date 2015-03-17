@@ -138,8 +138,8 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "images/tag.svg",
-      "kind": "images",
+      "file": "assets/tag.svg",
+      "kind": "assets",
       "filename": "tag.svg"
     },
     {
