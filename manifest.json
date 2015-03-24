@@ -38,35 +38,35 @@
       "component": true,
       "file": "components/js.tpl",
       "layout_name": "js",
-      "title": "js"
+      "title": "JS"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/langmenu.tpl",
       "layout_name": "langmenu",
-      "title": "langmenu"
+      "title": "Langmenu"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/menu.tpl",
       "layout_name": "menu",
-      "title": "menu"
+      "title": "Menu"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/search.tpl",
       "layout_name": "search",
-      "title": "search"
+      "title": "Search"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/siteheader.tpl",
       "layout_name": "siteheader",
-      "title": "siteheader"
+      "title": "SiteHeader"
     }
   ],
   "assets": [
